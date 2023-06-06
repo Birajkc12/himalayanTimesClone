@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Serif", serif;
+}
+
+section {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.container .logo .logoImg {
+  width: 100%;
+  max-width: 400px;
+}
+.container .logo img {
+  vertical-align: middle;
+  border-style: none;
+  height: auto;
+}
+.container .navigation {
+  border-bottom: 3px solid;
+  border-top: 1px solid;
+}
+.container .navigation .nav-item {
+  padding: 0 8px;
+  transition: background-color 0.3s;
+}
+.container .navigation .nav-item:nth-child(1) {
+  background-color: #008f69;
+}
+.container .navigation .nav-item:hover:nth-child(1) {
+  background-color: #008f69;
+  color: #fff;
+}
+.container .navigation .nav-item:hover:nth-child(2) {
+  background-color: lightgreen;
+}
+.container .navigation .nav-item:hover:nth-child(3) {
+  background-color: lightpink;
+}
+.container .navigation .nav-item:hover:nth-child(4) {
+  background-color: lightpink;
+}
+.container .navigation .nav-item:hover:nth-child(5) {
+  background-color: lightpink;
+}
+.container .navigation .nav-item:hover:nth-child(6) {
+  background-color: lightpink;
+}
+.container .navigation .nav-item:hover:nth-child(7) {
+  background-color: lightpink;
+}
+.container .navigation .nav-item:hover:nth-child(8) {
+  background-color: lightpink;
+}
+.container .navigation .nav-item:hover:nth-child(9) {
+  background-color: lightpink;
+}
+.container .navigation .active a {
+  color: #fff;
+}
+.container .navigation li a {
+  font-size: 14px !important;
+  text-transform: uppercase;
+}
+
+.marquee {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.marquee span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: marquee 15s linear infinite;
+  -webkit-animation: marquee 105 linear infinite;
+  animation: marquee 15s linear infinite;
+}
+.marquee span a {
+  text-decoration: none !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.offcanvas-toggle {
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.offcanvas-toggle {
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.offcanvas-menu.open {
+  transform: translateX(250px);
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.menu-items li {
+  margin-bottom: 10px;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+/* Existing CSS styles */
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Rest of the CSS styles */
+main {
+  border-bottom: 2px solid;
+}
+main .container .row {
+  margin-bottom: 2rem;
+}
+main .container .row .news1 {
+  width: 100%;
+}
+main .container .row .news1 img {
+  width: 50%;
+  object-fit: contain;
+}
+main .container .row .news1 .content {
+  width: 50%;
+}
+main .container .row .news1 .content h2 {
+  font-size: 30px;
+}
+main .container .row .news1 .content p {
+  font-size: 14px;
+}
+main .container .row .news2 {
+  width: 100%;
+}
+main .container .row .news2 img {
+  width: 40%;
+  object-fit: cover;
+}
+main .container .row .news2 .content {
+  width: 60%;
+  overflow: hidden;
+}
+main .container .row .news2 .content h2 {
+  font-size: 19px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+main .container .row .news2 .content p {
+  font-size: 13px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+main .container .row .news3 {
+  width: 100%;
+}
+main .container .row .news3 img {
+  width: 40%;
+  object-fit: cover;
+}
+main .container .row .news3 .content {
+  width: 60%;
+  overflow: hidden;
+}
+main .container .row .news3 .content h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container h2 {
+  margin-bottom: 30px;
+}
+.container .news-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.container .news-cards .news-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.container .news-cards .news-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.container .news-cards .news-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.container .news-cards .news-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.other-news h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.other-news .news-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 2rem;
+}
+.other-news .news-section .news-item {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.other-news .news-section .news-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.other-news .news-section .news-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.other-news .news-section .news-item .news-read-more {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 30px 0;
+  color: #666;
+  font-size: 14px;
+}
+footer h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+footer ul li a {
+  color: #666;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+footer hr {
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer .text-center {
+  text-align: center;
+}
+
+/* Custom styles for About Us page */
+.about-section {
+  padding: 20px;
+}
+.about-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.about-section h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.about-section p {
+  margin-bottom: 20px;
+}
+
+/* Custom styles for Contact Us page */
+.contact-section {
+  padding: 20px;
+}
+.contact-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contact-section h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.contact-section p {
+  margin-bottom: 20px;
+}
+.contact-section .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-section .contact-info .contact-item {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.contact-section form {
+  max-width: 400px;
+}
+.contact-section form .form-group {
+  margin-bottom: 20px;
+}
+.contact-section form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contact-section form .form-group input[type=text],
+.contact-section form .form-group input[type=email],
+.contact-section form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-section form .form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+.contact-section form button[type=submit] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-section form button[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+/*# sourceMappingURL=style.css.map */

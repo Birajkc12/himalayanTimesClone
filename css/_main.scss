@@ -1,0 +1,61 @@
+main {
+  .container {
+    .row {
+      margin-bottom: 2rem;
+      .news1 {
+        width: 100%;
+        img {
+          width: 50%;
+          object-fit: contain;
+        }
+        .content {
+          width: 50%;
+          h2 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .news2 {
+        width: 100%;
+        img {
+          width: 40%;
+          object-fit: cover;
+        }
+        .content {
+          width: 60%;
+          overflow: hidden;
+          h2 {
+            font-size: 19px;
+            margin-bottom: 5px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 13px;
+            margin-bottom: 1rem;
+            font-weight: 400;
+          }
+        }
+      }
+      .news3 {
+        width: 100%;
+        img {
+          width: 40%;
+          object-fit: cover;
+        }
+        .content {
+          width: 60%;
+          overflow: hidden;
+          h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  border-bottom: 2px solid;
+}
